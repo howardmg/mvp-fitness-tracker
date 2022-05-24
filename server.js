@@ -1,5 +1,4 @@
 const express = require('express')
-const { send } = require('express/lib/response')
 const { Pool } = require('pg')
 
 const app = express()
@@ -7,7 +6,7 @@ app.use(express.json())
 app.use(express.static('Public'))
 
 const pool = new Pool ({
-    connectionString: 'postgres://vfkhwmcrfyxepa:07c30010f13894bf487169c546eed6c6c5db03879ff685af18cd41c364854575@ec2-3-228-235-79.compute-1.amazonaws.com:5432/d4csa15j8p8msb',
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
       } 
