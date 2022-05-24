@@ -1,0 +1,26 @@
+{
+  "name": "mvp-fitness-tracker",
+  "version": "1.0.0",
+  "description": "Full-stack project",
+  "main": "index.js",
+  "engines": {
+    "node": "v18.1.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howardmg/mvp-fitness-tracker.git"
+  },
+  "author": "Mike Howard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howardmg/mvp-fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/howardmg/mvp-fitness-tracker#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
+}
