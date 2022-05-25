@@ -23,12 +23,20 @@ $addEntry.on('click', () => {
 
             var $ul = $('<ul></ul>').addClass('workout')
             $ul.appendTo($resultCard)
-      
-            if (data[i].date !== null){
-              var $li = $('<li>').addClass('date').text(`${data[i].date}`);
-              $li.appendTo($ul);
-            }
-      
+
+            // Add date info, append to ul
+            var $date= $('<li>').addClass('date').text("Date: " + `${data[i].date}`);
+            $date.appendTo($ul);
+
+            // Add workout type info, append to ul
+            var $type = $('<li>').addClass('type').text("Type: " + `${data[i].type}`);
+            $type.appendTo($ul);
+
+            if (data[i].muscle_group !== null){
+                var $muscleGroup = $('<li>').addClass('muscle-group').text("Muscle Group: " + `${data[i].muscle_group}`);
+                $muscleGroup.appendTo($ul);
+              }
+    
             // if (show.genres !== null){
             //   var $h2 = $('<h2></h2>').addClass('card-generes').text(`${show.genres.join(', ')}`);
             //   $h2.appendTo($resultCard);
