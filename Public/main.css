@@ -123,3 +123,10 @@
 .tracker__add:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
+/* Display results */
+
+.result-card {
+    border: 4px solid darkblue;
+    margin: 12px 12px 0px 0px;
+}
